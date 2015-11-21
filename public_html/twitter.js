@@ -20,7 +20,7 @@ function getTweets(){
 	
 	$('#twitter-feed').html(headerHTML + loadingHTML);
 	 
-    $.getJSON('gettweets.php', 
+    $.getJSON('gettweets.php?user=' + $("#loadtweetsnm").val(), 
         function(feeds) {   
 		   //alert(feeds);
             var feedHTML = '';
