@@ -1,0 +1,18 @@
+<div>
+	<h1>List of Popular Databases</h1>
+	<div id="dblistdiv">
+		<ul id="dblist">
+			<script type="text/javascript">
+				$(function(){
+					$.getJSON("/data/dbs.php", function(json){
+						$.each(json,function(i,val){
+							$("#dblist").append(
+								"<li>Name: " + val.name + ", Homepage: " + val.url + "</li>"
+							);
+						});
+					});
+				});
+			</script>
+		</ul>
+	</div>
+</div>

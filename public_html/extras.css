@@ -1,0 +1,37 @@
+.wrapper
+{
+    min-height:100%;
+    width:100%;
+    position:relative;
+    display:inline-block;
+}
+.sidebar
+{
+height:100%;
+    width:25%;
+}
+.content
+{
+   height:100%;
+    position:relative;
+}
+#twitter
+{
+font-size:1.1em;
+}
+body {
+    background:gray;
+}
+input
+{
+    margin: 1%;
+}
+@media (max-width: 550px) {
+body{font-size:10px !important;}
+.sidebar{ width:40%;}
+.content{ width:60%;}
+}
+#dblist, #mvclist
+{
+    font-size: 1.1em;
+}

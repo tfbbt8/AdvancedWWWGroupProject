@@ -1,0 +1,7 @@
+ErrorDocument 404 /Errors/new404Error.html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-z]+)/?$ index.php?params=$1 [L,NC,NE]
+
+# RewriteRule ^([a-z]+)/?$ index.html?phpID=$1

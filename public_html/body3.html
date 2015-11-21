@@ -1,0 +1,19 @@
+<div>
+	<h1>List of Popular Web MVC Frameworks</h1>
+	<div id="mvclistdiv">
+		<ul id="mvclist">
+			<script type="text/javascript">
+				$(function(){
+					$.getJSON("/data/mvcs.php", function(json){
+						$.each(json,function(i,val){
+							$("#mvclist").append(
+								"<li>Name: " + val.name + ", Homepage: " + val.url + "</li>"
+							);
+						});
+					});
+				});
+			</script>
+		</ul>
+	</div>
+</div>
+
